@@ -12,6 +12,9 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -27,6 +30,7 @@ public class Answer_Activity extends AppCompatActivity {
     private ArrayList<Model> quizList = new ArrayList<>();
     private  ArrayList<String> yourAnswerList = new ArrayList<>();
     int count = 0;
+    AdView adView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +42,11 @@ public class Answer_Activity extends AppCompatActivity {
         question = findViewById(R.id.question1_text);
         correct = findViewById(R.id.answer_text);
         your = findViewById(R.id.your_answer_text);
+
+        adView = findViewById(R.id.adView);
+        MobileAds.initialize(this);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
 
         Intent intent = getIntent();
         String dataJson = intent.getStringExtra("quizList");

@@ -34,6 +34,14 @@
             android:foreground="@drawable/close_img_foreground"/>
     </RelativeLayout>
 
+    <com.google.android.gms.ads.AdView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/adView"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-6384814922638129/1046874858"/>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
