@@ -1,4 +1,4 @@
-# Quizee
+# Quizee (This application serves as flazetech Technologies' internship project in the realm of software development.)
 Quizee is your passport to a world of knowledge, offering a wide array of online quizzes that span the realms of science, sports, computers, mythology, and geology. Challenge yourself and others in a fun and engaging way, while expanding your horizons on a diverse range of topics.
 Welcome to Quizee, the ultimate online quiz app that's here to fuel your thirst for knowledge! Dive into a world of engaging quizzes covering various topics, including science, sports, computer, mythology, and geology. Challenge yourself, compete with friends, and expand your horizons, all within the Quizee app.
 
